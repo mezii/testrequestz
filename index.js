@@ -3,7 +3,7 @@ const app = express();
 
 // Middleware to log all headers
 app.use((req, res, next) => {
-  console.log('Incoming Request Headers:', req.headers);
+  console.log('Incoming Request Headers:', req);
   next(); // Pass control to the next middleware or route handler
 });
 
